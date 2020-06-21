@@ -1,0 +1,5 @@
+- Python Crash Course
+- Automate the boring stuff with Python
+- Doing Math with Python
+- Learning Python
+- Scientific Computation in Python

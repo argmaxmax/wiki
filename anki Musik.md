@@ -1,0 +1,4 @@
+- Zu welcher Tonart ist diese Tonart enharmonisch?
+- Was ist ein E Dur Akkord in 2. Umkehrung?
+- Welchen Akkord bilden diese Klaviertasten?
+- 

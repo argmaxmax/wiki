@@ -1,0 +1,4 @@
+# Satz: Dualbasis des Dualraums
+Die Dualbasis $B^*$ einer Basis $B$ eines $K$-Vektorraumes $X$ ist genau dann eine Basis des Dualraumes $X^*$, wenn $\dim X \lt \infty.$ In diesem Fall sind $X\cong X^* .$ Weiterhin ist sie immer linear unabhängig, unabhängig von der Dimension.
+## Beweis.
+Definiere eine Abbildung $$\varphi :\begin{cases}X &\to &K \\ x=\sum_{b\in B} \lambda _bb &\mapsto &\sum_{b\in B} \lambda _b \end{cases},$$ die der eindeutig bestimmten Linearkombinationsdarstellung von $x$ bezüglich der Basis $B$ die Summe der Koeffizienten zuordnet. Diese ist eine Linearform, also Element des Dualraums, und es gilt $$\varphi \not \in \operatorname{span}(B^*) = \left\{ \sum_{b\in B} \lambda _bb^* \mid \lambda _b\in K \right\} ,$$ da die Summen endlich sind. Es folgt, dass $B^*$ kein Erzeugendensystem von $X^*$ ist. $\blacksquare$

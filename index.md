@@ -1,3 +1,5 @@
-# wiki
+# Professional Wiki
 
-$\mathrm{e}^2$
+## [Mathematics](Mathematics)
+
+## [Informatics](Informatics)

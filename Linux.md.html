@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Linux</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="the-linux-operating-system">The Linux Operating System</h1>
+<h2 id="operating-systems-concepts">Operating Systems Concepts</h2>
+<p>Abstractions is one of the main concepts of operating systems concepts. An Operating System itself is a program running on a computer, that maintains the system itself and also runs other programs. An Operating System can be broken down into three parts in the following way: 1. Hardware<br />
+1. CPU<br />
+2. RAM<br />
+3. Disks<br />
+4. Network Ports<br />
+2. Kernel<br />
+1. System Calls<br />
+2. Process Management<br />
+3. Memory Management<br />
+4. Device Drivers<br />
+3. User Processes<br />
+1. GUI<br />
+2. Servers<br />
+3. Shell</p>
+<p>Es gibt den Kernel und den User Mode. Der Kernel kann die Hardware uneingeschränkt nutzen, der user bzw die user processes nur einen kleinen Teil des sog Kernel Spaces, den User Space. Um mit den Kernel zu kommunizieren, nutzen Prozesse system calls.</p>
+<p>Beim managen von Prozessen nutzt den kernel context switches, welche eine art fliegender Wechsel zwischen Prozessen ist. Es laufen immer nur für kurze timeslices ein Prozess, bis der nächste ein bisschen Zeit vom Kernel eingeteilt bekommt. Zwei Syscalls sind besonders wichtig, fork und exec. Jeder user Prozess außer init entsteht aus fork, und meistens wird auch exec ausgeführt um ein. Wenn ein process fork callt, erstellt der kernel einen fast identischen prozess. Wenn ein process exec(program) callt, dann startet der kernel program, den current process ersetzend. Auf einem System gibt es mindestens den root user, und user sind da um berechtigungen und abgrenzungen zu unterstützen. Dabei hat jeder user space process einen user “owner” und der process heißt as owner laufend.</p>
+<p>User können genau ihre eigenen processes zu einem gewissen grad beeinflussen.</p>
+<h2 id="the-linux-shell">The Linux Shell</h2>
+<h3 id="cat-co."><code>cat</code> &amp; co.</h3>
+<p>Der <code>cat</code> befehl gibt inhalte von endlich vielen Dateien aus:</p>
+<pre><code>cat file_1 file_2</code></pre>
+<p>The <code>ls</code> command displays contents of directories. Using it, including filetypes in long version:</p>
+<pre><code>ls -l -F</code></pre>
+<p>The <code>cp</code> command copies <code>file1</code> into <code>file2</code> and replaces or <code>touch</code>es <code>file2</code>:</p>
+<pre><code>cp file_1 file_2</code></pre>
+<ul>
+<li>renamed dateien <code>mv file_1 file_2</code></li>
+<li>aber man kann auch mehrere files in ein directory moven mit: <code>mv file_1 file2 dir</code></li>
+</ul>
+</body>
+</html>

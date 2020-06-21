@@ -1,0 +1,1 @@
+Eine Abbildung zwischen metrischen Räumen $(X,{d_{X}}),(Y,{d_Y})$ heißt stetig in einem Punkt $\overline{x}\in X$, falls sie eine in $\overline{x}$ stetige Abbildung auf den durch die Metriken induzierten Topologischen Räumen ist, also $f : (X,\mathcal T_{d_{X}}) \to (Y, \mathcal T_{d_{Y}})$ eine stetige Abbildung zwischen Topologischen Räumen ist.

@@ -1,0 +1,1 @@
+Seien $X,Y$ normierte Räume. Die Abbildung $$ \left\lVert \cdot \right\rVert :\begin{cases} \mathcal L(X,Y) &\to &[0,\infty] \\ T &\mapsto & \left\lVert T \right\rVert :=\displaystyle \sup _{x\in X\\x\neq 0}\frac{\left\lVert Tx \right\rVert }{\left\lVert x \right\rVert }\end{cases} $$ heißt Operatornorm auf $\mathcal L(X,Y)$.
